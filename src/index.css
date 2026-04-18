@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "softcream";
+  default: true;
+
+  --color-base-100: #f7f3eb;
+  --color-base-200: #efe8dc;
+  --color-base-300: #e4dccf;
+  --color-base-content: #3b3b3b;
+
+  --color-primary: #a68a64;
+  --color-secondary: #d6bfa7;
+  --color-accent: #c2a878;
+}
+
+@plugin "daisyui/theme" {
+  name: "softdark";
+
+  --color-base-100: #1e1f24;
+  --color-base-content: #e6e6e6;
+
+  --color-primary: #7aa2f7;
+}
