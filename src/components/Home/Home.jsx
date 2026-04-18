@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import profileImg from "../../assets/gulf.jpg";
-import allyo from "../../assets/3.jpg";
+import allyo from "../../assets/3.JPG";
 import allyo1 from "../../assets/allyo.JPG";
 import bannerImg from "../../assets/port.png";
 import hack01 from "../../assets/HACK001.JPG";
