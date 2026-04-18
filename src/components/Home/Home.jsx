@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import profileImg from "../../assets/gulf.jpg";
-import allyo from "../../assets/3.JPG";
-import allyo1 from "../../assets/allyo.JPG";
+import allyo from "../../assets/3.jpg";
+import allyo1 from "../../assets/allyo.jpg";
 import bannerImg from "../../assets/port.png";
-import hack01 from "../../assets/HACK001.JPG";
+import hack01 from "../../assets/HACK001.jpg";
 import Ning2 from "../../assets/2Ning.jpg";
 
 export default function Home() {
