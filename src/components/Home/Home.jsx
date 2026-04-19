@@ -6,7 +6,7 @@ import profileImg from "../../assets/s.png";
 import allyo from "../../assets/3.jpg";
 import allyo1 from "../../assets/allyo.jpg";
 import bannerImg from "../../assets/port1.png";
-import hack01 from "../../assets/HACK001.jpg";
+import Hack01 from "../../assets/hack01.jpg";
 import Ning2 from "../../assets/tarnscript.pdf";
 
 export default function Home() {
@@ -172,7 +172,7 @@ export default function Home() {
                             {/* Modal ย่อย (ขยายรูปที่ 1) */}
                             <dialog id="img1" className="modal">
                                 <div className="modal-box max-w-5xl p-2 bg-transparent shadow-none">
-                                    <img src={hack01} className="w-full rounded-lg" />
+                                    <img src={Hack01} className="w-full rounded-lg" />
                                     <div className="modal-action mt-2">
                                         <form method="dialog">
                                             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-white bg-black/50 hover:bg-black/80">✕</button>
