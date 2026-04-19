@@ -150,7 +150,7 @@ export default function Home() {
 
                                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                         <img
-                                            src={hack01}
+                                            src={Hack01}
                                             className="rounded-lg cursor-pointer hover:scale-105 transition"
                                             onClick={() => document.getElementById('img1').showModal()}
                                         />
