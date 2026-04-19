@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Certificate from "../Certificate/Certificate";
 
-import profileImg from "../../assets/s.png";
+import profileImg from "../../assets/me01.jpg";
 import allyo from "../../assets/3.jpg";
 import allyo1 from "../../assets/allyo.jpg";
 import bannerImg from "../../assets/port1.png";
