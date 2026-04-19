@@ -1,16 +1,16 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Certificate from "../Certificate/Certificate";
 
-import profileImg from "../../assets/gulf.jpg";
+import profileImg from "../../assets/s.png";
 import allyo from "../../assets/3.jpg";
 import allyo1 from "../../assets/allyo.jpg";
-import bannerImg from "../../assets/port.png";
+import bannerImg from "../../assets/port1.png";
 import hack01 from "../../assets/HACK001.jpg";
-import Ning2 from "../../assets/2Ning.jpg";
+import Ning2 from "../../assets/tarnscript.pdf";
 
 export default function Home() {
     const { hash } = useLocation();
-
     useEffect(() => {
         if (hash) {
             setTimeout(() => {
@@ -45,7 +45,7 @@ export default function Home() {
                     <figure className="lg:w-1/3 p-6">
                         <img
                             src={profileImg}
-                            alt="Thanawart"
+                            alt="Tanawat"
                             className="rounded-2xl shadow-sm w-full h-auto object-cover"
                         />
                     </figure>
@@ -55,7 +55,7 @@ export default function Home() {
                             นักศึกษาปริญญาตรีสายไอทีที่กำลังมองหาโอกาสในการฝึกประสบการณ์วิชาชีพ (สหกิจศึกษา)
                             มีความสนใจในการพัฒนาเว็บไซต์ทั้งส่วน Frontend และระบบ Backend เพื่อสร้างแอปพลิเคชันที่ใช้งานได้จริง
                             <br /><br />
-                            <span className="font-semibold px-3 py-1 bg-primary/10 text-primary rounded-lg">GPA 3.49</span>
+                            <span className="font-semibold px-3 py-1 bg-primary/10 text-primary rounded-lg">Choose Me</span>
                         </p>
 
                         <div className="card-actions justify-end mt-4">
@@ -63,7 +63,7 @@ export default function Home() {
                                 <button className="btn btn-outline">ดู GitHub</button>
                             </a>
                             <a href={Ning2} download>
-                                <button className="btn btn-primary">ดาวน์โหลด Resume</button>
+                                <button className="btn btn-primary">GPA 3.51</button>
                             </a>
                         </div>
                     </div>
@@ -94,16 +94,16 @@ export default function Home() {
                         <div className="mb-3 mt-2">
                             <span className="font-semibold block mb-2 text-gray-700">Backend & Database</span>
                             <div className="flex flex-wrap gap-2">
-                                <div className="badge badge-secondary badge-outline badge-lg">Go (Golang)</div>
-                                <div className="badge badge-secondary badge-outline badge-lg">PostgreSQL</div>
+                                <div className="badge badge-primary badge-outline badge-lg">Go (Golang)</div>
+                                <div className="badge badge-primary badge-outline badge-lg">PostgreSQL</div>
                             </div>
                         </div>
 
                         <div className="mt-2">
                             <span className="font-semibold block mb-2 text-gray-700">Tools & Version Control</span>
                             <div className="flex flex-wrap gap-2">
-                                <div className="badge badge-accent badge-outline badge-lg">Git & GitHub</div>
-                                <div className="badge badge-accent badge-outline badge-lg">Vite</div>
+                                <div className="badge badge-primary badge-outline badge-lg">Git & GitHub</div>
+                                <div className="badge badge-primary badge-outline badge-lg">Vite</div>
                             </div>
                         </div>
                     </div>
@@ -203,6 +203,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            {/* --- 2. เพิ่มเส้นคั่นและเรียกใช้ Certificate ต่อท้ายตรงนี้ --- */}
+      <div id="/#certificates" className="divider text-gray-400">🎓 Certificates</div>
+      <Certificate />
 
         </div>
     );

@@ -23,6 +23,7 @@ export default function Navbar() {
                                 <li><Link to="/contact">Contact</Link></li>
                                 <li><a href="/#skills">Skills</a></li>
                                 <li><a href="/#activities">Activities</a></li>
+                                <li><a href="/#certificates">Certificates</a></li>
                             </ul>
                         </details>
 
