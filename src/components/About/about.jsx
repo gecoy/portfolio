@@ -11,9 +11,9 @@ import jun2 from "../../assets/jun2.jpg";
 import ja1 from "../../assets/ja1.jpg";
 
 export default function About() {
-  // สร้าง Array เก็บข้อมูลรูปภาพ (คุณ Gulf เปลี่ยน src เป็นพาร์ทรูปจริงได้เลย เช่น "/images/me-1.jpg")
+  
   const photos = [
-    { id: 1, src: friends, alt: "ComSci" }, // ลบ "" ออก
+    { id: 1, src: friends, alt: "ComSci" }, 
     { id: 2, src: friends2, alt: "jobless" },
     { id: 3, src: friends3, alt: "กิจกรรม" },
     { id: 4, src: friends4, alt: "ขอขมา A" },
@@ -61,7 +61,7 @@ export default function About() {
               <img
                 src={photo.src}
                 alt={photo.alt}
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-cover transform group-hover:scale-120 transition-transform duration-500"
               />
               
               {/* Overlay: ข้อความจะโผล่มาตอนเอาเมาส์ไปชี้ (Hover) */}

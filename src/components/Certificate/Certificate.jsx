@@ -4,7 +4,6 @@ import cert3 from "../../assets/cert3.jpg";
 import cert4 from "../../assets/cert4.jpg";
 import cert5 from "../../assets/cert5.jpg";
 import cert6 from "../../assets/cert6.jpg";
-// ถ้ามีรูปที่ 3 ก็ import เพิ่มตรงนี้
 
 export default function Certificate() {
     return (
@@ -179,7 +178,7 @@ export default function Certificate() {
             </dialog>
 
 
-            {/* Modal สำหรับใบที่ 4 (id ต้องตรงกับตอน onClick) */}
+            
             <dialog id="modal_cert4" className="modal">
                 <div className="modal-box max-w-5xl p-2 bg-transparent shadow-none">
                     <img src={cert4} className="w-full rounded-lg" alt="Zoom Cert 2" />
@@ -195,7 +194,7 @@ export default function Certificate() {
             </dialog>
 
 
-            {/* Modal สำหรับใบที่ 5 (id ต้องตรงกับตอน onClick) */}
+            
             <dialog id="modal_cert5" className="modal">
                 <div className="modal-box max-w-5xl p-2 bg-transparent shadow-none">
                     <img src={cert5} className="w-full rounded-lg" alt="Zoom Cert 2" />
@@ -211,7 +210,7 @@ export default function Certificate() {
             </dialog>
 
 
-            {/* Modal สำหรับใบที่ 6 (id ต้องตรงกับตอน onClick) */}
+            
             <dialog id="modal_cert6" className="modal">
                 <div className="modal-box max-w-5xl p-2 bg-transparent shadow-none">
                     <img src={cert6} className="w-full rounded-lg" alt="Zoom Cert 2" />
