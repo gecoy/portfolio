@@ -1,10 +1,11 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // อย่าลืม Import ไฟล์หน้าที่คุณอยากให้มันโชว์เข้ามาด้วย (สมมติว่าไฟล์ชื่อ about.jsx)
 import About from "./components/About/about";
 
 import Home from "./components/Home/Home";
 import Contact from "./components/Contact/contact";
+import Project from "./components/Project/Project";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             {/* ถ้า URL เป็น /contact ให้เอาไฟล์ About มาโชว์ */}
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/project" element={<Project />} />
           </Routes>
         </div>
         

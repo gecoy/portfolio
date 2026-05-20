@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Certificate from "../Certificate/Certificate";
+import Project from "../Project/Project";
 
 import profileImg from "../../assets/me001.jpg";
 import allyo from "../../assets/3.jpg";
@@ -96,14 +97,20 @@ export default function Home() {
                             <div className="flex flex-wrap gap-2">
                                 <div className="badge badge-primary badge-outline badge-lg">Go (Golang)</div>
                                 <div className="badge badge-primary badge-outline badge-lg">PostgreSQL</div>
+                                {/* 👇 ดึงทักษะเสริมจากตอนทำระบบ API Security Logs มาใส่ร่วมด้วยได้เลยครับ */}
+                                <div className="badge badge-primary badge-outline badge-lg">RESTful API</div>
                             </div>
                         </div>
 
                         <div className="mt-2">
-                            <span className="font-semibold block mb-2 text-gray-700">Tools & Version Control</span>
+                            <span className="font-semibold block mb-2 text-gray-700">Tools & Cloud Deployment</span>
                             <div className="flex flex-wrap gap-2">
                                 <div className="badge badge-primary badge-outline badge-lg">Git & GitHub</div>
                                 <div className="badge badge-primary badge-outline badge-lg">Vite</div>
+                                {/* 👇 เพิ่มเซ็ตนี้เข้าไป รับรองว่าพอร์ตดูมีมิติและโปรขึ้นเยอะมากครับ G */}
+                                <div className="badge badge-primary badge-outline badge-lg">Vercel</div>
+                                <div className="badge badge-primary badge-outline badge-lg">Railway</div>
+                                <div className="badge badge-primary badge-outline badge-lg">pgAdmin</div>
                             </div>
                         </div>
                     </div>
@@ -134,7 +141,7 @@ export default function Home() {
                             ได้ฝึกฝนการทำงานเป็นทีมและการตัดสินใจภายใต้ข้อจำกัดของเวลา
                             <span className="font-semibold text-primary block mt-2">✨ ผลงาน: ลำดับที่ 18 จาก 43 ทีม</span>
                         </p>
-                        
+
                         <div className="card-actions justify-end mt-4">
                             <button
                                 className="btn btn-secondary"
@@ -203,9 +210,13 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <div className="divider text-gray-400 my-6">💻 Projects</div>
+            <Project />
+
+
             {/* --- 2. เพิ่มเส้นคั่นและเรียกใช้ Certificate ต่อท้ายตรงนี้ --- */}
-      <div id="/#certificates" className="divider text-gray-400">🎓 Certificates</div>
-      <Certificate />
+            <div id="/#certificates" className="divider text-gray-400">🎓 Certificates</div>
+            <Certificate />
 
         </div>
     );

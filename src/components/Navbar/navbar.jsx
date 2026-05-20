@@ -19,6 +19,7 @@ export default function Navbar() {
                         <details>
                             <summary>More</summary>
                             <ul className="bg-base-100 rounded-t-none p-1">
+                                <li><Link to="/Project">Projects</Link></li>
                                 <li><Link to="/about">About</Link></li>
                                 <li><Link to="/contact">Contact</Link></li>
                                 <li><a href="/#skills">Skills</a></li>
